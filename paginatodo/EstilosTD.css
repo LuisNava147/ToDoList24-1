@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #313642;;
+}
+
+.top{
+    background-color: #272b34;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    height: 7rem;
+    color: white;
+}
+
+.top p{
+    opacity: 0.5;
+    font-weight: lighter;
+}
+
+.Aquí{
+    display: flex;
+}
+
+.Escribe{
+    background-color: #4d586a ;
+    color: white;
+    opacity: 0.5;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    height: 3rem;
+    width: 18rem;
+    border-radius: 22px; 
+    border: none;
+}
+
+.button-circle {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #247bab ;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+.Hacer{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+}
+
+.Ejer{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+}
+
+.In{
+    display: flex;
+    margin-top: 1rem;
+    background-color:#383e4b ;
+    height: 4rem;
+    width: 23rem;
+    align-items: center;
+    border-radius: 26px;
+}
+
+.checkbox-style{
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: #67738a 2px solid;
+    background-color: none;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.labelcheck{
+    margin-left: 1rem;
+}
+
+.checkbox-style:checked::before {
+    content: '\2713';
+    display: block;
+    text-align: center;
+    line-height: 1.5rem; 
+    color: #67738a; 
+}
+
+.checkbox-style:checked + label{
+    color: #67738a;
+    text-decoration: line-through;
+}
+
+.button-clear {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.button-clear:hover {
+    background-color: #ff1a1a;
+}
+
+.checkbox-style + .labelcheck {
+    display: inline-flex;
+    align-items: center;
+}
+
+.labelcheck i {
+    margin-left: 10px;
+    color: green;
+    display: none;
+}
+
+.checkbox-style:checked + .labelcheck i {
+    display: inline;
+}
